@@ -1,0 +1,38 @@
+{
+  "name": "qase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf assets/allure-results && rm -rf assets/allure-results && wdio run ./src/config/wdio.conf.ts",
+    "report": "allure generate assets/allure-results --clean -o assets/allure-report && allure open assets/allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivkudosh/qase.git"
+  },
+  "author": "Ilya Kudosh",
+  "license": "ISC",
+  "homepage": "https://github.com/ivkudosh/qase#readme",
+  "dependencies": {
+    "@types/mocha": "^10.0.5",
+    "@types/node": "^20.9.3",
+    "allure-commandline": "^2.24.1",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "@wdio/allure-reporter": "^8.23.1",
+    "@wdio/cli": "^8.23.3",
+    "@wdio/local-runner": "^8.23.3",
+    "@wdio/mocha-framework": "^8.23.1",
+    "@wdio/spec-reporter": "^8.23.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.54.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
